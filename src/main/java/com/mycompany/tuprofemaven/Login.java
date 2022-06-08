@@ -123,7 +123,7 @@ public class Login extends javax.swing.JFrame {
                 Usuario.getText(), 
                 String.valueOf(jPasswordField1.getPassword())
         );
-        if ("Estudiante".equals(TipoDeUsuario) && !Users.validUser(usuario, TipoDeUsuario)){
+        if ("Estudiante".equals(TipoDeUsuario) && !UsersDB.validUser(usuario, TipoDeUsuario)){
             JOptionPane.showMessageDialog(
                     null,
                     "El usuario o la contraseña que digitó no es correcta",
@@ -137,7 +137,7 @@ public class Login extends javax.swing.JFrame {
             new Estudiante().setVisible(true);
             this.dispose();
         }
-        else if ("Profesor".equals(TipoDeUsuario) && !Users.validUser(usuario, TipoDeUsuario)){
+        else if ("Profesor".equals(TipoDeUsuario) && !UsersDB.validUser(usuario, TipoDeUsuario)){
             JOptionPane.showMessageDialog(
                     null,
                     "El usuario o la contraseña que digitó no es correcta",
@@ -151,7 +151,7 @@ public class Login extends javax.swing.JFrame {
             new Profesor().setVisible(true);
             this.dispose();
         }
-        else if ("Administrador".equals(TipoDeUsuario) && !Users.validUser(usuario, TipoDeUsuario)){
+        else if ("Administrador".equals(TipoDeUsuario) && !UsersDB.validUser(usuario, TipoDeUsuario)){
             JOptionPane.showMessageDialog(
                     null,
                     "El usuario o la contraseña que digitó no es correcta",

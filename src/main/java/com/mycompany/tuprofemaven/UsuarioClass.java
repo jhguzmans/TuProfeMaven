@@ -9,8 +9,12 @@ package com.mycompany.tuprofemaven;
  * @author Juan carlos
  */
 public class UsuarioClass {
-    private String username;
-    private String password;
+    protected String username;
+    protected String password;
+    
+    public UsuarioClass() {
+        
+    }
     
     public UsuarioClass(String username, String password) {
         this.username = username;
