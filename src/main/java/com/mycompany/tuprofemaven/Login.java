@@ -1,7 +1,9 @@
 package com.mycompany.tuprofemaven;
 
+import javax.swing.JOptionPane;
+
 public class Login extends javax.swing.JFrame {
-    public Login() {
+    public Login()  {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -98,7 +100,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -106,8 +108,8 @@ public class Login extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -117,17 +119,51 @@ public class Login extends javax.swing.JFrame {
     private void IngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IngresarActionPerformed
         String TipoDeUsuario=TipoUsuario.getSelectedItem().toString();
         System.out.println(TipoDeUsuario);
-        if(TipoDeUsuario=="Estudiante"){
+        UsuarioClass usuario = new UsuarioClass(
+                Usuario.getText(), 
+                String.valueOf(jPasswordField1.getPassword())
+        );
+        if ("Estudiante".equals(TipoDeUsuario) && !Users.validUser(usuario, TipoDeUsuario)){
+            JOptionPane.showMessageDialog(
+                    null,
+                    "El usuario o la contraseña que digitó no es correcta",
+                    "ERROR",
+                    JOptionPane.WARNING_MESSAGE
+            );
+            this.dispose();
+            new Login().setVisible(true);
+        }
+        else if("Estudiante".equals(TipoDeUsuario)){              
             new Estudiante().setVisible(true);
             this.dispose();
-        }else{
-            if(TipoDeUsuario=="Profesor"){
-                new Profesor().setVisible(true);
-                this.dispose();
-            }else{
-                new Administrador().setVisible(true);
-                this.dispose();
-                    }
+        }
+        else if ("Profesor".equals(TipoDeUsuario) && !Users.validUser(usuario, TipoDeUsuario)){
+            JOptionPane.showMessageDialog(
+                    null,
+                    "El usuario o la contraseña que digitó no es correcta",
+                    "ERROR",
+                    JOptionPane.WARNING_MESSAGE
+            );
+            this.dispose();
+            new Login().setVisible(true);
+        }
+        else if("Profesor".equals(TipoDeUsuario)){
+            new Profesor().setVisible(true);
+            this.dispose();
+        }
+        else if ("Administrador".equals(TipoDeUsuario) && !Users.validUser(usuario, TipoDeUsuario)){
+            JOptionPane.showMessageDialog(
+                    null,
+                    "El usuario o la contraseña que digitó no es correcta",
+                    "ERROR",
+                    JOptionPane.WARNING_MESSAGE
+            );
+            this.dispose();
+            new Login().setVisible(true);
+        }
+        else{
+            new Administrador().setVisible(true);
+            this.dispose();                    
         }
     }//GEN-LAST:event_IngresarActionPerformed
 

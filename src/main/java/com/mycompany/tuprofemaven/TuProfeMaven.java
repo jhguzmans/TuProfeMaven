@@ -8,6 +8,5 @@ public class TuProfeMaven {
                 new Login().setVisible(true);
             }
         });
-        System.out.println("Hello World!");
     }
 }
