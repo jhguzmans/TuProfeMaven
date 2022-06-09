@@ -39,7 +39,7 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel1.setText("Tipo de usuario");
 
-        TipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Estudiante", "Profesor" }));
+        TipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Profesor" }));
         TipoUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TipoUsuarioActionPerformed(evt);
