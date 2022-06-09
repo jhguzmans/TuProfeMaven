@@ -20,20 +20,28 @@ public class Login extends javax.swing.JFrame {
         Ingresar = new javax.swing.JButton();
         TipoUsuario = new javax.swing.JComboBox<>();
         Registrarse = new javax.swing.JButton();
+        Rol = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Usuario");
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("Rol de usuario");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, -1, -1));
 
         jLabel2.setText("Contraseña");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 168, -1, -1));
+        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 190, 136, -1));
 
         Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsuarioActionPerformed(evt);
             }
         });
+        jPanel1.add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 134, 182, -1));
 
         jLabel3.setText("¿No tienes una cuenta?");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 267, -1, -1));
 
         Ingresar.setText("Ingresar");
         Ingresar.addActionListener(new java.awt.event.ActionListener() {
@@ -41,6 +49,7 @@ public class Login extends javax.swing.JFrame {
                 IngresarActionPerformed(evt);
             }
         });
+        jPanel1.add(Ingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 218, -1, -1));
 
         TipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Estudiante", "Profesor" }));
         TipoUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -48,6 +57,7 @@ public class Login extends javax.swing.JFrame {
                 TipoUsuarioActionPerformed(evt);
             }
         });
+        jPanel1.add(TipoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 67, -1, -1));
 
         Registrarse.setText("Registrarse");
         Registrarse.addActionListener(new java.awt.event.ActionListener() {
@@ -55,45 +65,10 @@ public class Login extends javax.swing.JFrame {
                 RegistrarseActionPerformed(evt);
             }
         });
+        jPanel1.add(Registrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 289, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Registrarse)
-                    .addComponent(TipoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Ingresar)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(91, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(TipoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(jLabel1)
-                .addGap(3, 3, 3)
-                .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Ingresar)
-                .addGap(27, 27, 27)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Registrarse)
-                .addContainerGap(91, Short.MAX_VALUE))
-        );
+        Rol.setText("Usuario");
+        jPanel1.add(Rol, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 115, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -101,14 +76,14 @@ public class Login extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -184,6 +159,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Ingresar;
     private javax.swing.JButton Registrarse;
+    private javax.swing.JLabel Rol;
     private javax.swing.JComboBox<String> TipoUsuario;
     private javax.swing.JTextField Usuario;
     private javax.swing.JLabel jLabel1;
