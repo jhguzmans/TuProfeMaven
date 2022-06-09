@@ -22,7 +22,6 @@ public class Login extends javax.swing.JFrame {
         Registrarse = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         jLabel1.setText("Usuario");
 
