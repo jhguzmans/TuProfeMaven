@@ -12,7 +12,7 @@ public class EstudianteClass extends UsuarioClass{
     }
     
     public EstudianteClass(
-            String usuario,
+            String username,
             String password,
             String nombre,
             String apellido,
@@ -20,7 +20,7 @@ public class EstudianteClass extends UsuarioClass{
             String numero_identificacion,
             String telefono
     ) {
-        super(usuario, password);
+        super(username, password);
         this.nombre = nombre;
         this.apellido = apellido;
         this.tipo_identificacion = tipo_identificacion;

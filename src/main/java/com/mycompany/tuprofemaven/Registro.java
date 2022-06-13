@@ -248,6 +248,21 @@ public class Registro extends javax.swing.JFrame {
             UsersDB.ingresarUsuario(nuevo_usuario, "Estudiante");
             EstudiantesDB.ingresarEstudiante(estudiante);
         }
+        else if ("Profesor".equals(TipoDeUsuario)) {
+            ProfesorClass profesor = new ProfesorClass(
+                    usuario,
+                    password,
+                    nombre,
+                    apellido,
+                    tipo_identificacion,
+                    numero_identificacion,
+                    telefono,
+                    null
+            );
+            UsuarioClass nuevo_usuario = new UsuarioClass(usuario, password);
+            UsersDB.ingresarUsuario(nuevo_usuario, "Profesor");
+            ProfesoresDB.ingresarProfesor(profesor);
+        }
     }//GEN-LAST:event_TerminarActionPerformed
 
     private void ConPasswordTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConPasswordTextActionPerformed
