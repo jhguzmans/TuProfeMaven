@@ -6,6 +6,7 @@ package com.mycompany.tuprofemaven;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
@@ -14,51 +15,35 @@ import javax.swing.JOptionPane;
  * @author Juan carlos
  */
 public class ProfesoresDB {
+    private static final Connection connect = Conexion.getConexion();
+    
     public static void ingresarProfesor(ProfesorClass profesor) {
         try {
-            Connection connect = Conexion.getConexion();
             PreparedStatement ps = connect.prepareStatement(
-                    "INSERT INTO profesores (usuario,password,nombre,apellido,numIdent,materias,telefono,tipoIdent) VALUES (?,?,?,?,?,?,?,?)"
+                    "INSERT INTO profesores (usuario,password,nombre,apellido,numIdent,telefono,tipoIdent,lunes,martes,miercoles,jueves,viernes,sabado) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)"
             );
-            if (profesor.getMaterias() == null) {
-                ps.setString(1, profesor.getUsername());
-                ps.setString(2, profesor.getPassword());
-                ps.setString(3, profesor.getNombre());
-                ps.setString(4, profesor.getApellido());
-                ps.setString(5, profesor.getNumero_Identificacion());
-                ps.setString(6, "null");
-                ps.setString(7, profesor.getTelefono());
-                ps.setString(8, profesor.getTipo_Identificacion());
-                ps.executeUpdate();
-                JOptionPane.showMessageDialog(
+            ps.setString(1, profesor.getUsername());
+            ps.setString(2, profesor.getPassword());
+            ps.setString(3, profesor.getNombre());
+            ps.setString(4, profesor.getApellido());
+            ps.setString(5, profesor.getNumero_Identificacion());
+            ps.setString(6, profesor.getTelefono());
+            ps.setString(7, profesor.getTipo_Identificacion());
+            ps.setInt(8, profesor.getHorarioLunes());
+            ps.setInt(9, profesor.getHorarioMartes());
+            ps.setInt(10, profesor.getHorarioMiercoles());
+            ps.setInt(11, profesor.getHorarioJueves());
+            ps.setInt(12, profesor.getHorarioViernes());
+            ps.setInt(13, profesor.getHorarioSabado());
+            ps.setInt(14, profesor.getMaterias());
+            ps.executeUpdate();
+            JOptionPane.showMessageDialog(
                     null,
                     "Profesor registrado con éxito",
                     "CONFIRMACIÓN",
                     JOptionPane.INFORMATION_MESSAGE
-                );
-            }
-            else {
-                for (String x:profesor.getMaterias()) {
-                    ingresarProfesor(
-                            profesor.getUsername(),
-                            profesor.getPassword(),
-                            profesor.getNombre(),
-                            profesor.getApellido(),
-                            profesor.getNumero_Identificacion(),
-                            x,
-                            profesor.getTelefono(),
-                            profesor.getTipo_Identificacion()
-                    );
-                }
-                JOptionPane.showMessageDialog(
-                    null,
-                    "Materias actualizadas con éxito",
-                    "CONFIRMACIÓN",
-                    JOptionPane.INFORMATION_MESSAGE
-                );
-            }
-        }
-        catch (SQLException e) {
+            );
+        } catch (SQLException e) {
             JOptionPane.showMessageDialog(
                     null,
                     "Ocurrió un error al conectar con la base de datos",
@@ -69,32 +54,76 @@ public class ProfesoresDB {
         }
     }
     
-    private static void ingresarProfesor(
-            String usuario,
-            String password,
-            String nombre,
-            String apellido,
-            String numIdent,
-            String materia,
-            String telefono,
-            String tipoIdent
-    ) {
+    public static int idProfesor(UsuarioClass usuario) {
+        int id = 0;
         try {
-            Connection connect = Conexion.getConexion();
             PreparedStatement ps = connect.prepareStatement(
-                    "INSERT INTO profesores (usuario,password,nombre,apellido,numIdent,materias,telefono,tipoIdent) VALUES (?,?,?,?,?,?,?,?)"
+                    "SELECT * FROM profesores WHERE usuario=?"
             );
-            ps.setString(1, usuario);
-            ps.setString(2, password);
-            ps.setString(3, nombre);
-            ps.setString(4, apellido);
-            ps.setString(5, numIdent);
-            ps.setString(6, materia);
-            ps.setString(7, telefono);
-            ps.setString(8, tipoIdent);
-            ps.executeQuery();
+           ps.setString(1, usuario.getUsername());
+           ResultSet rs = ps.executeQuery();
+           while (rs.next()) {
+               id = rs.getInt("ID");
+               break;
+           }
         }
         catch (SQLException e) {
+            System.out.println("I am here");
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ocurrió un error al conectar con la base de datos",
+                    "ERROR",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            System.exit(0);
+        }
+        return id;
+    }
+    
+    public static ResultSet getProfesor(int id_profesor) {
+        ResultSet rs = null;
+        try {
+            PreparedStatement ps = connect.prepareStatement(
+                    "SELECT * FROM profesores WHERE id=?"
+            );
+            ps.setInt(1, id_profesor);
+            rs = ps.executeQuery();
+        }
+        catch (SQLException e) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ocurrió un error al conectar con la base de datos",
+                    "ERROR",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            System.exit(0);
+        }
+        return rs;
+    }
+    
+    public static void modificarProfesor(int id_profesor, ProfesorClass profesor) {
+        try {
+            PreparedStatement ps = connect.prepareStatement(
+                    "UPDATE profesores SET usuario=? , password=? , nombre=? , apellido=? , numIdent=? , telefono=? , tipoIdent=? , lunes=? , martes=? , miercoles=? , jueves=? , viernes=? , sabado=?, materias=? WHERE ID=?"
+            );
+            ps.setString(1, profesor.getUsername());
+            ps.setString(2, profesor.getPassword());
+            ps.setString(3, profesor.getNombre());
+            ps.setString(4, profesor.getApellido());
+            ps.setString(5, profesor.getNumero_Identificacion());
+            ps.setString(6, profesor.getTelefono());
+            ps.setString(7, profesor.getTipo_Identificacion());
+            ps.setInt(8, profesor.getHorarioLunes());
+            ps.setInt(9, profesor.getHorarioMartes());
+            ps.setInt(10, profesor.getHorarioMiercoles());
+            ps.setInt(11, profesor.getHorarioJueves());
+            ps.setInt(12, profesor.getHorarioViernes());
+            ps.setInt(13, profesor.getHorarioSabado());
+            ps.setInt(14, profesor.getMaterias());
+            ps.setInt(15, id_profesor);
+            ps.executeUpdate();
+        }
+        catch(SQLException e) {
             JOptionPane.showMessageDialog(
                     null,
                     "Ocurrió un error al conectar con la base de datos",

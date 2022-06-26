@@ -122,7 +122,8 @@ public class Login extends javax.swing.JFrame {
             new Login().setVisible(true);
         }
         else if("Profesor".equals(TipoDeUsuario)){
-            new Profesor().setVisible(true);
+            int id = ProfesoresDB.idProfesor(usuario);
+            new Profesor(id).setVisible(true);
             this.dispose();
         }
         else if ("Administrador".equals(TipoDeUsuario) && !UsersDB.validUser(usuario, TipoDeUsuario)){

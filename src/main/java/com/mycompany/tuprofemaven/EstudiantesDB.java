@@ -14,9 +14,10 @@ import javax.swing.JOptionPane;
  * @author Juan carlos
  */
 public class EstudiantesDB {
+    private static final Connection connect = Conexion.getConexion();
+    
     public static void ingresarEstudiante(EstudianteClass estudiante) {
         try{
-            Connection connect = Conexion.getConexion();
             PreparedStatement ps = connect.prepareStatement(
                     "INSERT INTO estudiantes (usuario,password,nombre,apellido,tipo_identificacion,numero_identificacion,telefono) VALUES (?,?,?,?,?,?,?)"
             );

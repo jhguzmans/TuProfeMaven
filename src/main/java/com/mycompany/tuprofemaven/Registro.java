@@ -256,8 +256,7 @@ public class Registro extends javax.swing.JFrame {
                     apellido,
                     tipo_identificacion,
                     numero_identificacion,
-                    telefono,
-                    null
+                    telefono
             );
             UsuarioClass nuevo_usuario = new UsuarioClass(usuario, password);
             UsersDB.ingresarUsuario(nuevo_usuario, "Profesor");

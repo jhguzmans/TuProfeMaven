@@ -7,10 +7,11 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 public class UsersDB {
+    private static final Connection connect = Conexion.getConexion();
+    
     public static ResultSet inventarioUsuarios(String tipo) {
         ResultSet rs = null;
         try {
-            Connection connect = Conexion.getConexion();
             PreparedStatement ps = connect.prepareStatement("SELECT * FROM users WHERE tipo=?");
             ps.setString(1, tipo);
             rs = ps.executeQuery();
@@ -33,8 +34,9 @@ public class UsersDB {
             while (rs.next()) {
                 UsuarioClass usuario2 = new UsuarioClass(rs.getString("usuario"), rs.getString("password"));
                 if (usuario2.equals(usuario)) {
+                    rs.close();
                     return true;
-                }
+                }                
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(
@@ -44,13 +46,12 @@ public class UsersDB {
                     JOptionPane.ERROR_MESSAGE
             );
             System.exit(0);
-        }
+        }        
         return false;
     }
     
     public static void ingresarUsuario(UsuarioClass usuario, String tipo) {
         try {
-            Connection connect = Conexion.getConexion();
             PreparedStatement ps = connect.prepareStatement(
                     "INSERT INTO users(usuario,password,tipo) VALUES(?,?,?)"
             );
