@@ -20,7 +20,7 @@ public class ProfesoresDB {
     public static void ingresarProfesor(ProfesorClass profesor) {
         try {
             PreparedStatement ps = connect.prepareStatement(
-                    "INSERT INTO profesores (usuario,password,nombre,apellido,numIdent,telefono,tipoIdent,lunes,martes,miercoles,jueves,viernes,sabado) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)"
+                    "INSERT INTO profesores (usuario,password,nombre,apellido,numIdent,telefono,tipoIdent,lunes,martes,miercoles,jueves,viernes,sabado,materias) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
             );
             ps.setString(1, profesor.getUsername());
             ps.setString(2, profesor.getPassword());
@@ -132,5 +132,23 @@ public class ProfesoresDB {
             );
             System.exit(0);
         }
+    }
+    
+    public static ResultSet inventarioProfesores() {
+        ResultSet rs = null;
+        try {
+            PreparedStatement ps = connect.prepareStatement("SELECT * FROM profesores");
+            rs = ps.executeQuery();
+        }
+        catch (SQLException e) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ocurrió un error al conectar con la base de datos",
+                    "ERROR",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            System.exit(0);
+        }
+        return rs;
     }
 }

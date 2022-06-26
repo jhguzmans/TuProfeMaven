@@ -20,6 +20,7 @@ public class Profesor extends javax.swing.JFrame {
     
     public Profesor(int id_profesor) {
         initComponents();
+        this.setLocationRelativeTo(null);
         this.id_profesor = id_profesor;
         int materias = 0;
         ResultSet rs = ProfesoresDB.getProfesor(id_profesor);
@@ -64,6 +65,7 @@ public class Profesor extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         materias_actuales = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
+        regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,6 +96,13 @@ public class Profesor extends javax.swing.JFrame {
 
         jLabel2.setText("Mis Materias");
 
+        regresar.setText("Regresar");
+        regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regresarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -112,7 +121,8 @@ public class Profesor extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(configurar_horario)
-                    .addComponent(agregar))
+                    .addComponent(agregar)
+                    .addComponent(regresar))
                 .addGap(140, 140, 140))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -138,9 +148,14 @@ public class Profesor extends javax.swing.JFrame {
                         .addComponent(jLabel2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
-                    .addComponent(configurar_horario))
-                .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(configurar_horario)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(regresar)
+                        .addGap(16, 16, 16))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -172,6 +187,12 @@ public class Profesor extends javax.swing.JFrame {
         new AgregarMaterias(id_profesor).setVisible(true);
     }//GEN-LAST:event_agregarActionPerformed
 
+    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        new Login().setVisible(true);
+    }//GEN-LAST:event_regresarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel MiNombre;
@@ -183,5 +204,6 @@ public class Profesor extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea materias_actuales;
+    private javax.swing.JButton regresar;
     // End of variables declaration//GEN-END:variables
 }

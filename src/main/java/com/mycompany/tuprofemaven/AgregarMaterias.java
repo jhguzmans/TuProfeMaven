@@ -76,6 +76,7 @@ public class AgregarMaterias extends javax.swing.JFrame {
     
     public AgregarMaterias(int id_profesor) {
         initComponents();
+        this.setLocationRelativeTo(null);
         this.id_profesor = id_profesor;
         ResultSet rs = ProfesoresDB.getProfesor(id_profesor);
         int materias = 0;

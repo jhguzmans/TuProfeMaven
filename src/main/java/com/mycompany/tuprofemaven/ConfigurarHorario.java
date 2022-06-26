@@ -440,6 +440,7 @@ public class ConfigurarHorario extends javax.swing.JFrame {
     
     public ConfigurarHorario(int id_profesor) {
         initComponents();
+        this.setLocationRelativeTo(null);
         this.id_profesor = id_profesor;        
         int lunes = 0;
         int martes = 0;
@@ -764,7 +765,7 @@ public class ConfigurarHorario extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("6:00");
+        jLabel5.setText("6:00 a.m.");
 
         viernes8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -772,21 +773,21 @@ public class ConfigurarHorario extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setText("7:00");
+        jLabel6.setText("7:00 a.m.");
 
-        jLabel7.setText("8:00");
+        jLabel7.setText("8:00 a.m.");
 
-        jLabel8.setText("9:00");
+        jLabel8.setText("9:00 a.m.");
 
-        jLabel3.setText("10:00");
+        jLabel3.setText("10:00 a.m.");
 
-        jLabel4.setText("11:00");
+        jLabel4.setText("11:00 a.m.");
 
-        jLabel9.setText("12:00");
+        jLabel9.setText("12:00 m.");
 
-        jLabel10.setText("13:00");
+        jLabel10.setText("1:00 p.m.");
 
-        jLabel11.setText("14:00");
+        jLabel11.setText("2:00 p.m.");
 
         sabado14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -802,17 +803,17 @@ public class ConfigurarHorario extends javax.swing.JFrame {
 
         jLabel1.setText("Configura tu horario");
 
-        jLabel12.setText("15:00");
+        jLabel12.setText("3:00 p.m.");
 
-        jLabel13.setText("16:00");
+        jLabel13.setText("4:00 p.m.");
 
-        jLabel14.setText("17:00");
+        jLabel14.setText("5:00 p.m.");
 
-        jLabel15.setText("18:00");
+        jLabel15.setText("6:00 p.m.");
 
-        jLabel16.setText("19:00");
+        jLabel16.setText("7:00 p.m.");
 
-        jLabel17.setText("20:00");
+        jLabel17.setText("8:00 p.m.");
 
         jLabel18.setText("Lunes");
 
@@ -1358,7 +1359,7 @@ public class ConfigurarHorario extends javax.swing.JFrame {
                                 .addComponent(sabado13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(sabado14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(sabado1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
