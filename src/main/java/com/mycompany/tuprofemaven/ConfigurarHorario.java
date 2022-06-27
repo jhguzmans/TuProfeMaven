@@ -77,365 +77,365 @@ public class ConfigurarHorario extends javax.swing.JFrame {
     
     private void colorearBotones() {
         if (!lunes_selec[0])
-            lunes1.setBackground(Color.YELLOW);
+            lunes1.setBackground(Color.WHITE);
         else
-            lunes1.setBackground(Color.GREEN);
+            lunes1.setBackground(Color.BLUE);
         if (!lunes_selec[1])
-            lunes2.setBackground(Color.YELLOW);
+            lunes2.setBackground(Color.WHITE);
         else
-            lunes2.setBackground(Color.GREEN);
+            lunes2.setBackground(Color.BLUE);
         if (!lunes_selec[2])
-            lunes3.setBackground(Color.YELLOW);
+            lunes3.setBackground(Color.WHITE);
         else
-            lunes3.setBackground(Color.GREEN);
+            lunes3.setBackground(Color.BLUE);
         if (!lunes_selec[3])
-            lunes4.setBackground(Color.YELLOW);
+            lunes4.setBackground(Color.WHITE);
         else
-            lunes4.setBackground(Color.GREEN);
+            lunes4.setBackground(Color.BLUE);
         if (!lunes_selec[4])
-            lunes5.setBackground(Color.YELLOW);
+            lunes5.setBackground(Color.WHITE);
         else
-            lunes5.setBackground(Color.GREEN);
+            lunes5.setBackground(Color.BLUE);
         if (!lunes_selec[5])
-            lunes6.setBackground(Color.YELLOW);
+            lunes6.setBackground(Color.WHITE);
         else
-            lunes6.setBackground(Color.GREEN);
+            lunes6.setBackground(Color.BLUE);
         if (!lunes_selec[6])
-            lunes7.setBackground(Color.YELLOW);
+            lunes7.setBackground(Color.WHITE);
         else
-            lunes7.setBackground(Color.GREEN);
+            lunes7.setBackground(Color.BLUE);
         if (!lunes_selec[7])
-            lunes8.setBackground(Color.YELLOW);
+            lunes8.setBackground(Color.WHITE);
         else
-            lunes8.setBackground(Color.GREEN);
+            lunes8.setBackground(Color.BLUE);
         if (!lunes_selec[8])
-            lunes9.setBackground(Color.YELLOW);
+            lunes9.setBackground(Color.WHITE);
         else
-            lunes9.setBackground(Color.GREEN);
+            lunes9.setBackground(Color.BLUE);
         if (!lunes_selec[9])
-            lunes10.setBackground(Color.YELLOW);
+            lunes10.setBackground(Color.WHITE);
         else
-            lunes10.setBackground(Color.GREEN);
+            lunes10.setBackground(Color.BLUE);
         if (!lunes_selec[10])
-            lunes11.setBackground(Color.YELLOW);
+            lunes11.setBackground(Color.WHITE);
         else
-            lunes11.setBackground(Color.GREEN);
+            lunes11.setBackground(Color.BLUE);
         if (!lunes_selec[11])
-            lunes12.setBackground(Color.YELLOW);
+            lunes12.setBackground(Color.WHITE);
         else
-            lunes12.setBackground(Color.GREEN);
+            lunes12.setBackground(Color.BLUE);
         if (!lunes_selec[12])
-            lunes13.setBackground(Color.YELLOW);
+            lunes13.setBackground(Color.WHITE);
         else
-            lunes13.setBackground(Color.GREEN);
+            lunes13.setBackground(Color.BLUE);
         if (!lunes_selec[13])
-            lunes14.setBackground(Color.YELLOW);
+            lunes14.setBackground(Color.WHITE);
         else
-            lunes14.setBackground(Color.GREEN);
+            lunes14.setBackground(Color.BLUE);
         if (!lunes_selec[14])
-            lunes15.setBackground(Color.YELLOW);
+            lunes15.setBackground(Color.WHITE);
         else
-            lunes15.setBackground(Color.GREEN);
+            lunes15.setBackground(Color.BLUE);
         if (!martes_selec[0])
-            martes1.setBackground(Color.YELLOW);
+            martes1.setBackground(Color.WHITE);
         else
-            martes1.setBackground(Color.GREEN);
+            martes1.setBackground(Color.BLUE);
         if (!martes_selec[1])
-            martes2.setBackground(Color.YELLOW);
+            martes2.setBackground(Color.WHITE);
         else
-            martes2.setBackground(Color.GREEN);
+            martes2.setBackground(Color.BLUE);
         if (!martes_selec[2])
-            martes3.setBackground(Color.YELLOW);
+            martes3.setBackground(Color.WHITE);
         else
-            martes3.setBackground(Color.GREEN);
+            martes3.setBackground(Color.BLUE);
         if (!martes_selec[3])
-            martes4.setBackground(Color.YELLOW);
+            martes4.setBackground(Color.WHITE);
         else
-            martes4.setBackground(Color.GREEN);
+            martes4.setBackground(Color.BLUE);
         if (!martes_selec[4])
-            martes5.setBackground(Color.YELLOW);
+            martes5.setBackground(Color.WHITE);
         else
-            martes5.setBackground(Color.GREEN);
+            martes5.setBackground(Color.BLUE);
         if (!martes_selec[5])
-            martes6.setBackground(Color.YELLOW);
+            martes6.setBackground(Color.WHITE);
         else
-            martes6.setBackground(Color.GREEN);
+            martes6.setBackground(Color.BLUE);
         if (!martes_selec[6])
-            martes7.setBackground(Color.YELLOW);
+            martes7.setBackground(Color.WHITE);
         else
-            martes7.setBackground(Color.GREEN);
+            martes7.setBackground(Color.BLUE);
         if (!martes_selec[7])
-            martes8.setBackground(Color.YELLOW);
+            martes8.setBackground(Color.WHITE);
         else
-            martes8.setBackground(Color.GREEN);
+            martes8.setBackground(Color.BLUE);
         if (!martes_selec[8])
-            martes9.setBackground(Color.YELLOW);
+            martes9.setBackground(Color.WHITE);
         else
-            martes9.setBackground(Color.GREEN);
+            martes9.setBackground(Color.BLUE);
         if (!martes_selec[9])
-            martes10.setBackground(Color.YELLOW);
+            martes10.setBackground(Color.WHITE);
         else
-            martes10.setBackground(Color.GREEN);
+            martes10.setBackground(Color.BLUE);
         if (!martes_selec[10])
-            martes11.setBackground(Color.YELLOW);
+            martes11.setBackground(Color.WHITE);
         else
-            martes11.setBackground(Color.GREEN);
+            martes11.setBackground(Color.BLUE);
         if (!martes_selec[11])
-            martes12.setBackground(Color.YELLOW);
+            martes12.setBackground(Color.WHITE);
         else
-            martes12.setBackground(Color.GREEN);
+            martes12.setBackground(Color.BLUE);
         if (!martes_selec[12])
-            martes13.setBackground(Color.YELLOW);
+            martes13.setBackground(Color.WHITE);
         else
-            martes13.setBackground(Color.GREEN);
+            martes13.setBackground(Color.BLUE);
         if (!martes_selec[13])
-            martes14.setBackground(Color.YELLOW);
+            martes14.setBackground(Color.WHITE);
         else
-            martes14.setBackground(Color.GREEN);
+            martes14.setBackground(Color.BLUE);
         if (!martes_selec[14])
-            martes15.setBackground(Color.YELLOW);
+            martes15.setBackground(Color.WHITE);
         else
-            martes15.setBackground(Color.GREEN);
+            martes15.setBackground(Color.BLUE);
         if (!miercoles_selec[0])
-            miercoles1.setBackground(Color.YELLOW);
+            miercoles1.setBackground(Color.WHITE);
         else
-            miercoles1.setBackground(Color.GREEN);
+            miercoles1.setBackground(Color.BLUE);
         if (!miercoles_selec[1])
-            miercoles2.setBackground(Color.YELLOW);
+            miercoles2.setBackground(Color.WHITE);
         else
-            miercoles2.setBackground(Color.GREEN);
+            miercoles2.setBackground(Color.BLUE);
         if (!miercoles_selec[2])
-            miercoles3.setBackground(Color.YELLOW);
+            miercoles3.setBackground(Color.WHITE);
         else
-            miercoles3.setBackground(Color.GREEN);
+            miercoles3.setBackground(Color.BLUE);
         if (!miercoles_selec[3])
-            miercoles4.setBackground(Color.YELLOW);
+            miercoles4.setBackground(Color.WHITE);
         else
-            miercoles4.setBackground(Color.GREEN);
+            miercoles4.setBackground(Color.BLUE);
         if (!miercoles_selec[4])
-            miercoles5.setBackground(Color.YELLOW);
+            miercoles5.setBackground(Color.WHITE);
         else
-            miercoles5.setBackground(Color.GREEN);
+            miercoles5.setBackground(Color.BLUE);
         if (!miercoles_selec[5])
-            miercoles6.setBackground(Color.YELLOW);
+            miercoles6.setBackground(Color.WHITE);
         else
-            miercoles6.setBackground(Color.GREEN);
+            miercoles6.setBackground(Color.BLUE);
         if (!miercoles_selec[6])
-            miercoles7.setBackground(Color.YELLOW);
+            miercoles7.setBackground(Color.WHITE);
         else
-            miercoles7.setBackground(Color.GREEN);
+            miercoles7.setBackground(Color.BLUE);
         if (!miercoles_selec[7])
-            miercoles8.setBackground(Color.YELLOW);
+            miercoles8.setBackground(Color.WHITE);
         else
-            miercoles8.setBackground(Color.GREEN);
+            miercoles8.setBackground(Color.BLUE);
         if (!miercoles_selec[8])
-            miercoles9.setBackground(Color.YELLOW);
+            miercoles9.setBackground(Color.WHITE);
         else
-            miercoles9.setBackground(Color.GREEN);
+            miercoles9.setBackground(Color.BLUE);
         if (!miercoles_selec[9])
-            miercoles10.setBackground(Color.YELLOW);
+            miercoles10.setBackground(Color.WHITE);
         else
-            miercoles10.setBackground(Color.GREEN);
+            miercoles10.setBackground(Color.BLUE);
         if (!miercoles_selec[10])
-            miercoles11.setBackground(Color.YELLOW);
+            miercoles11.setBackground(Color.WHITE);
         else
-            miercoles11.setBackground(Color.GREEN);
+            miercoles11.setBackground(Color.BLUE);
         if (!miercoles_selec[11])
-            miercoles12.setBackground(Color.YELLOW);
+            miercoles12.setBackground(Color.WHITE);
         else
-            miercoles12.setBackground(Color.GREEN);
+            miercoles12.setBackground(Color.BLUE);
         if (!miercoles_selec[12])
-            miercoles13.setBackground(Color.YELLOW);
+            miercoles13.setBackground(Color.WHITE);
         else
-            miercoles13.setBackground(Color.GREEN);
+            miercoles13.setBackground(Color.BLUE);
         if (!miercoles_selec[13])
-            miercoles14.setBackground(Color.YELLOW);
+            miercoles14.setBackground(Color.WHITE);
         else
-            miercoles14.setBackground(Color.GREEN);
+            miercoles14.setBackground(Color.BLUE);
         if (!miercoles_selec[14])
-            miercoles15.setBackground(Color.YELLOW);
+            miercoles15.setBackground(Color.WHITE);
         else
-            miercoles15.setBackground(Color.GREEN);
+            miercoles15.setBackground(Color.BLUE);
         if (!jueves_selec[0])
-            jueves1.setBackground(Color.YELLOW);
+            jueves1.setBackground(Color.WHITE);
         else
-            jueves1.setBackground(Color.GREEN);
+            jueves1.setBackground(Color.BLUE);
         if (!jueves_selec[1])
-            jueves2.setBackground(Color.YELLOW);
+            jueves2.setBackground(Color.WHITE);
         else
-            jueves2.setBackground(Color.GREEN);
+            jueves2.setBackground(Color.BLUE);
         if (!jueves_selec[2])
-            jueves3.setBackground(Color.YELLOW);
+            jueves3.setBackground(Color.WHITE);
         else
-            jueves3.setBackground(Color.GREEN);
+            jueves3.setBackground(Color.BLUE);
         if (!jueves_selec[3])
-            jueves4.setBackground(Color.YELLOW);
+            jueves4.setBackground(Color.WHITE);
         else
-            jueves4.setBackground(Color.GREEN);
+            jueves4.setBackground(Color.BLUE);
         if (!jueves_selec[4])
-            jueves5.setBackground(Color.YELLOW);
+            jueves5.setBackground(Color.WHITE);
         else
-            jueves5.setBackground(Color.GREEN);
+            jueves5.setBackground(Color.BLUE);
         if (!jueves_selec[5])
-            jueves6.setBackground(Color.YELLOW);
+            jueves6.setBackground(Color.WHITE);
         else
-            jueves6.setBackground(Color.GREEN);
+            jueves6.setBackground(Color.BLUE);
         if (!jueves_selec[6])
-            jueves7.setBackground(Color.YELLOW);
+            jueves7.setBackground(Color.WHITE);
         else
-            jueves7.setBackground(Color.GREEN);
+            jueves7.setBackground(Color.BLUE);
         if (!jueves_selec[7])
-            jueves8.setBackground(Color.YELLOW);
+            jueves8.setBackground(Color.WHITE);
         else
-            jueves8.setBackground(Color.GREEN);
+            jueves8.setBackground(Color.BLUE);
         if (!jueves_selec[8])
-            jueves9.setBackground(Color.YELLOW);
+            jueves9.setBackground(Color.WHITE);
         else
-            jueves9.setBackground(Color.GREEN);
+            jueves9.setBackground(Color.BLUE);
         if (!jueves_selec[9])
-            jueves10.setBackground(Color.YELLOW);
+            jueves10.setBackground(Color.WHITE);
         else
-            jueves10.setBackground(Color.GREEN);
+            jueves10.setBackground(Color.BLUE);
         if (!jueves_selec[10])
-            jueves11.setBackground(Color.YELLOW);
+            jueves11.setBackground(Color.WHITE);
         else
-            jueves11.setBackground(Color.GREEN);
+            jueves11.setBackground(Color.BLUE);
         if (!jueves_selec[11])
-            jueves12.setBackground(Color.YELLOW);
+            jueves12.setBackground(Color.WHITE);
         else
-            jueves12.setBackground(Color.GREEN);
+            jueves12.setBackground(Color.BLUE);
         if (!jueves_selec[12])
-            jueves13.setBackground(Color.YELLOW);
+            jueves13.setBackground(Color.WHITE);
         else
-            jueves13.setBackground(Color.GREEN);
+            jueves13.setBackground(Color.BLUE);
         if (!jueves_selec[13])
-            jueves14.setBackground(Color.YELLOW);
+            jueves14.setBackground(Color.WHITE);
         else
-            jueves14.setBackground(Color.GREEN);
+            jueves14.setBackground(Color.BLUE);
         if (!jueves_selec[14])
-            jueves15.setBackground(Color.YELLOW);
+            jueves15.setBackground(Color.WHITE);
         else
-            jueves15.setBackground(Color.GREEN);
+            jueves15.setBackground(Color.BLUE);
         if (!viernes_selec[0])
-            viernes1.setBackground(Color.YELLOW);
+            viernes1.setBackground(Color.WHITE);
         else
-            viernes1.setBackground(Color.GREEN);
+            viernes1.setBackground(Color.BLUE);
         if (!viernes_selec[1])
-            viernes2.setBackground(Color.YELLOW);
+            viernes2.setBackground(Color.WHITE);
         else
-            viernes2.setBackground(Color.GREEN);
+            viernes2.setBackground(Color.BLUE);
         if (!viernes_selec[2])
-            viernes3.setBackground(Color.YELLOW);
+            viernes3.setBackground(Color.WHITE);
         else
-            viernes3.setBackground(Color.GREEN);
+            viernes3.setBackground(Color.BLUE);
         if (!viernes_selec[3])
-            viernes4.setBackground(Color.YELLOW);
+            viernes4.setBackground(Color.WHITE);
         else
-            viernes4.setBackground(Color.GREEN);
+            viernes4.setBackground(Color.BLUE);
         if (!viernes_selec[4])
-            viernes5.setBackground(Color.YELLOW);
+            viernes5.setBackground(Color.WHITE);
         else
-            viernes5.setBackground(Color.GREEN);
+            viernes5.setBackground(Color.BLUE);
         if (!viernes_selec[5])
-            viernes6.setBackground(Color.YELLOW);
+            viernes6.setBackground(Color.WHITE);
         else
-            viernes6.setBackground(Color.GREEN);
+            viernes6.setBackground(Color.BLUE);
         if (!viernes_selec[6])
-            viernes7.setBackground(Color.YELLOW);
+            viernes7.setBackground(Color.WHITE);
         else
-            viernes7.setBackground(Color.GREEN);
+            viernes7.setBackground(Color.BLUE);
         if (!viernes_selec[7])
-            viernes8.setBackground(Color.YELLOW);
+            viernes8.setBackground(Color.WHITE);
         else
-            viernes8.setBackground(Color.GREEN);
+            viernes8.setBackground(Color.BLUE);
         if (!viernes_selec[8])
-            viernes9.setBackground(Color.YELLOW);
+            viernes9.setBackground(Color.WHITE);
         else
-            viernes9.setBackground(Color.GREEN);
+            viernes9.setBackground(Color.BLUE);
         if (!viernes_selec[9])
-            viernes10.setBackground(Color.YELLOW);
+            viernes10.setBackground(Color.WHITE);
         else
-            viernes10.setBackground(Color.GREEN);
+            viernes10.setBackground(Color.BLUE);
         if (!viernes_selec[10])
-            viernes11.setBackground(Color.YELLOW);
+            viernes11.setBackground(Color.WHITE);
         else
-            viernes11.setBackground(Color.GREEN);
+            viernes11.setBackground(Color.BLUE);
         if (!viernes_selec[11])
-            viernes12.setBackground(Color.YELLOW);
+            viernes12.setBackground(Color.WHITE);
         else
-            viernes12.setBackground(Color.GREEN);
+            viernes12.setBackground(Color.BLUE);
         if (!viernes_selec[12])
-            viernes13.setBackground(Color.YELLOW);
+            viernes13.setBackground(Color.WHITE);
         else
-            viernes13.setBackground(Color.GREEN);
+            viernes13.setBackground(Color.BLUE);
         if (!viernes_selec[13])
-            viernes14.setBackground(Color.YELLOW);
+            viernes14.setBackground(Color.WHITE);
         else
-            viernes14.setBackground(Color.GREEN);
+            viernes14.setBackground(Color.BLUE);
         if (!viernes_selec[14])
-            viernes15.setBackground(Color.YELLOW);
+            viernes15.setBackground(Color.WHITE);
         else
-            viernes15.setBackground(Color.GREEN);
+            viernes15.setBackground(Color.BLUE);
         if (!sabado_selec[0])
-            sabado1.setBackground(Color.YELLOW);
+            sabado1.setBackground(Color.WHITE);
         else
-            sabado1.setBackground(Color.GREEN);
+            sabado1.setBackground(Color.BLUE);
         if (!sabado_selec[1])
-            sabado2.setBackground(Color.YELLOW);
+            sabado2.setBackground(Color.WHITE);
         else
-            sabado2.setBackground(Color.GREEN);
+            sabado2.setBackground(Color.BLUE);
         if (!sabado_selec[2])
-            sabado3.setBackground(Color.YELLOW);
+            sabado3.setBackground(Color.WHITE);
         else
-            sabado3.setBackground(Color.GREEN);
+            sabado3.setBackground(Color.BLUE);
         if (!sabado_selec[3])
-            sabado4.setBackground(Color.YELLOW);
+            sabado4.setBackground(Color.WHITE);
         else
-            sabado4.setBackground(Color.GREEN);
+            sabado4.setBackground(Color.BLUE);
         if (!sabado_selec[4])
-            sabado5.setBackground(Color.YELLOW);
+            sabado5.setBackground(Color.WHITE);
         else
-            sabado5.setBackground(Color.GREEN);
+            sabado5.setBackground(Color.BLUE);
         if (!sabado_selec[5])
-            sabado6.setBackground(Color.YELLOW);
+            sabado6.setBackground(Color.WHITE);
         else
-            sabado6.setBackground(Color.GREEN);
+            sabado6.setBackground(Color.BLUE);
         if (!sabado_selec[6])
-            sabado7.setBackground(Color.YELLOW);
+            sabado7.setBackground(Color.WHITE);
         else
-            sabado7.setBackground(Color.GREEN);
+            sabado7.setBackground(Color.BLUE);
         if (!sabado_selec[7])
-            sabado8.setBackground(Color.YELLOW);
+            sabado8.setBackground(Color.WHITE);
         else
-            sabado8.setBackground(Color.GREEN);
+            sabado8.setBackground(Color.BLUE);
         if (!sabado_selec[8])
-            sabado9.setBackground(Color.YELLOW);
+            sabado9.setBackground(Color.WHITE);
         else
-            sabado9.setBackground(Color.GREEN);
+            sabado9.setBackground(Color.BLUE);
         if (!sabado_selec[9])
-            sabado10.setBackground(Color.YELLOW);
+            sabado10.setBackground(Color.WHITE);
         else
-            sabado10.setBackground(Color.GREEN);
+            sabado10.setBackground(Color.BLUE);
         if (!sabado_selec[10])
-            sabado11.setBackground(Color.YELLOW);
+            sabado11.setBackground(Color.WHITE);
         else
-            sabado11.setBackground(Color.GREEN);
+            sabado11.setBackground(Color.BLUE);
         if (!sabado_selec[11])
-            sabado12.setBackground(Color.YELLOW);
+            sabado12.setBackground(Color.WHITE);
         else
-            sabado12.setBackground(Color.GREEN);
+            sabado12.setBackground(Color.BLUE);
         if (!sabado_selec[12])
-            sabado13.setBackground(Color.YELLOW);
+            sabado13.setBackground(Color.WHITE);
         else
-            sabado13.setBackground(Color.GREEN);
+            sabado13.setBackground(Color.BLUE);
         if (!sabado_selec[13])
-            sabado14.setBackground(Color.YELLOW);
+            sabado14.setBackground(Color.WHITE);
         else
-            sabado14.setBackground(Color.GREEN);
+            sabado14.setBackground(Color.BLUE);
         if (!sabado_selec[14])
-            sabado15.setBackground(Color.YELLOW);
+            sabado15.setBackground(Color.WHITE);
         else
-            sabado15.setBackground(Color.GREEN);
+            sabado15.setBackground(Color.BLUE);
     }
     
     public ConfigurarHorario(int id_profesor) {
