@@ -7,6 +7,7 @@ package com.mycompany.tuprofemaven;
 import java.awt.Color;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,6 +20,7 @@ public class ConfigurarHorario extends javax.swing.JFrame {
      * Creates new form ConfigurarHorario
      */
     
+    private final Color mycolor = new Color(10886193);
     private int id_profesor;
     private boolean[] lunes_selec = new boolean[15];
     private boolean[] martes_selec = new boolean[15];
@@ -79,369 +81,370 @@ public class ConfigurarHorario extends javax.swing.JFrame {
         if (!lunes_selec[0])
             lunes1.setBackground(Color.WHITE);
         else
-            lunes1.setBackground(Color.BLUE);
+            lunes1.setBackground(mycolor);
         if (!lunes_selec[1])
             lunes2.setBackground(Color.WHITE);
         else
-            lunes2.setBackground(Color.BLUE);
+            lunes2.setBackground(mycolor);
         if (!lunes_selec[2])
             lunes3.setBackground(Color.WHITE);
         else
-            lunes3.setBackground(Color.BLUE);
+            lunes3.setBackground(mycolor);
         if (!lunes_selec[3])
             lunes4.setBackground(Color.WHITE);
         else
-            lunes4.setBackground(Color.BLUE);
+            lunes4.setBackground(mycolor);
         if (!lunes_selec[4])
             lunes5.setBackground(Color.WHITE);
         else
-            lunes5.setBackground(Color.BLUE);
+            lunes5.setBackground(mycolor);
         if (!lunes_selec[5])
             lunes6.setBackground(Color.WHITE);
         else
-            lunes6.setBackground(Color.BLUE);
+            lunes6.setBackground(mycolor);
         if (!lunes_selec[6])
             lunes7.setBackground(Color.WHITE);
         else
-            lunes7.setBackground(Color.BLUE);
+            lunes7.setBackground(mycolor);
         if (!lunes_selec[7])
             lunes8.setBackground(Color.WHITE);
         else
-            lunes8.setBackground(Color.BLUE);
+            lunes8.setBackground(mycolor);
         if (!lunes_selec[8])
             lunes9.setBackground(Color.WHITE);
         else
-            lunes9.setBackground(Color.BLUE);
+            lunes9.setBackground(mycolor);
         if (!lunes_selec[9])
             lunes10.setBackground(Color.WHITE);
         else
-            lunes10.setBackground(Color.BLUE);
+            lunes10.setBackground(mycolor);
         if (!lunes_selec[10])
             lunes11.setBackground(Color.WHITE);
         else
-            lunes11.setBackground(Color.BLUE);
+            lunes11.setBackground(mycolor);
         if (!lunes_selec[11])
             lunes12.setBackground(Color.WHITE);
         else
-            lunes12.setBackground(Color.BLUE);
+            lunes12.setBackground(mycolor);
         if (!lunes_selec[12])
             lunes13.setBackground(Color.WHITE);
         else
-            lunes13.setBackground(Color.BLUE);
+            lunes13.setBackground(mycolor);
         if (!lunes_selec[13])
             lunes14.setBackground(Color.WHITE);
         else
-            lunes14.setBackground(Color.BLUE);
+            lunes14.setBackground(mycolor);
         if (!lunes_selec[14])
             lunes15.setBackground(Color.WHITE);
         else
-            lunes15.setBackground(Color.BLUE);
+            lunes15.setBackground(mycolor);
         if (!martes_selec[0])
             martes1.setBackground(Color.WHITE);
         else
-            martes1.setBackground(Color.BLUE);
+            martes1.setBackground(mycolor);
         if (!martes_selec[1])
             martes2.setBackground(Color.WHITE);
         else
-            martes2.setBackground(Color.BLUE);
+            martes2.setBackground(mycolor);
         if (!martes_selec[2])
             martes3.setBackground(Color.WHITE);
         else
-            martes3.setBackground(Color.BLUE);
+            martes3.setBackground(mycolor);
         if (!martes_selec[3])
             martes4.setBackground(Color.WHITE);
         else
-            martes4.setBackground(Color.BLUE);
+            martes4.setBackground(mycolor);
         if (!martes_selec[4])
             martes5.setBackground(Color.WHITE);
         else
-            martes5.setBackground(Color.BLUE);
+            martes5.setBackground(mycolor);
         if (!martes_selec[5])
             martes6.setBackground(Color.WHITE);
         else
-            martes6.setBackground(Color.BLUE);
+            martes6.setBackground(mycolor);
         if (!martes_selec[6])
             martes7.setBackground(Color.WHITE);
         else
-            martes7.setBackground(Color.BLUE);
+            martes7.setBackground(mycolor);
         if (!martes_selec[7])
             martes8.setBackground(Color.WHITE);
         else
-            martes8.setBackground(Color.BLUE);
+            martes8.setBackground(mycolor);
         if (!martes_selec[8])
             martes9.setBackground(Color.WHITE);
         else
-            martes9.setBackground(Color.BLUE);
+            martes9.setBackground(mycolor);
         if (!martes_selec[9])
             martes10.setBackground(Color.WHITE);
         else
-            martes10.setBackground(Color.BLUE);
+            martes10.setBackground(mycolor);
         if (!martes_selec[10])
             martes11.setBackground(Color.WHITE);
         else
-            martes11.setBackground(Color.BLUE);
+            martes11.setBackground(mycolor);
         if (!martes_selec[11])
             martes12.setBackground(Color.WHITE);
         else
-            martes12.setBackground(Color.BLUE);
+            martes12.setBackground(mycolor);
         if (!martes_selec[12])
             martes13.setBackground(Color.WHITE);
         else
-            martes13.setBackground(Color.BLUE);
+            martes13.setBackground(mycolor);
         if (!martes_selec[13])
             martes14.setBackground(Color.WHITE);
         else
-            martes14.setBackground(Color.BLUE);
+            martes14.setBackground(mycolor);
         if (!martes_selec[14])
             martes15.setBackground(Color.WHITE);
         else
-            martes15.setBackground(Color.BLUE);
+            martes15.setBackground(mycolor);
         if (!miercoles_selec[0])
             miercoles1.setBackground(Color.WHITE);
         else
-            miercoles1.setBackground(Color.BLUE);
+            miercoles1.setBackground(mycolor);
         if (!miercoles_selec[1])
             miercoles2.setBackground(Color.WHITE);
         else
-            miercoles2.setBackground(Color.BLUE);
+            miercoles2.setBackground(mycolor);
         if (!miercoles_selec[2])
             miercoles3.setBackground(Color.WHITE);
         else
-            miercoles3.setBackground(Color.BLUE);
+            miercoles3.setBackground(mycolor);
         if (!miercoles_selec[3])
             miercoles4.setBackground(Color.WHITE);
         else
-            miercoles4.setBackground(Color.BLUE);
+            miercoles4.setBackground(mycolor);
         if (!miercoles_selec[4])
             miercoles5.setBackground(Color.WHITE);
         else
-            miercoles5.setBackground(Color.BLUE);
+            miercoles5.setBackground(mycolor);
         if (!miercoles_selec[5])
             miercoles6.setBackground(Color.WHITE);
         else
-            miercoles6.setBackground(Color.BLUE);
+            miercoles6.setBackground(mycolor);
         if (!miercoles_selec[6])
             miercoles7.setBackground(Color.WHITE);
         else
-            miercoles7.setBackground(Color.BLUE);
+            miercoles7.setBackground(mycolor);
         if (!miercoles_selec[7])
             miercoles8.setBackground(Color.WHITE);
         else
-            miercoles8.setBackground(Color.BLUE);
+            miercoles8.setBackground(mycolor);
         if (!miercoles_selec[8])
             miercoles9.setBackground(Color.WHITE);
         else
-            miercoles9.setBackground(Color.BLUE);
+            miercoles9.setBackground(mycolor);
         if (!miercoles_selec[9])
             miercoles10.setBackground(Color.WHITE);
         else
-            miercoles10.setBackground(Color.BLUE);
+            miercoles10.setBackground(mycolor);
         if (!miercoles_selec[10])
             miercoles11.setBackground(Color.WHITE);
         else
-            miercoles11.setBackground(Color.BLUE);
+            miercoles11.setBackground(mycolor);
         if (!miercoles_selec[11])
             miercoles12.setBackground(Color.WHITE);
         else
-            miercoles12.setBackground(Color.BLUE);
+            miercoles12.setBackground(mycolor);
         if (!miercoles_selec[12])
             miercoles13.setBackground(Color.WHITE);
         else
-            miercoles13.setBackground(Color.BLUE);
+            miercoles13.setBackground(mycolor);
         if (!miercoles_selec[13])
             miercoles14.setBackground(Color.WHITE);
         else
-            miercoles14.setBackground(Color.BLUE);
+            miercoles14.setBackground(mycolor);
         if (!miercoles_selec[14])
             miercoles15.setBackground(Color.WHITE);
         else
-            miercoles15.setBackground(Color.BLUE);
+            miercoles15.setBackground(mycolor);
         if (!jueves_selec[0])
             jueves1.setBackground(Color.WHITE);
         else
-            jueves1.setBackground(Color.BLUE);
+            jueves1.setBackground(mycolor);
         if (!jueves_selec[1])
             jueves2.setBackground(Color.WHITE);
         else
-            jueves2.setBackground(Color.BLUE);
+            jueves2.setBackground(mycolor);
         if (!jueves_selec[2])
             jueves3.setBackground(Color.WHITE);
         else
-            jueves3.setBackground(Color.BLUE);
+            jueves3.setBackground(mycolor);
         if (!jueves_selec[3])
             jueves4.setBackground(Color.WHITE);
         else
-            jueves4.setBackground(Color.BLUE);
+            jueves4.setBackground(mycolor);
         if (!jueves_selec[4])
             jueves5.setBackground(Color.WHITE);
         else
-            jueves5.setBackground(Color.BLUE);
+            jueves5.setBackground(mycolor);
         if (!jueves_selec[5])
             jueves6.setBackground(Color.WHITE);
         else
-            jueves6.setBackground(Color.BLUE);
+            jueves6.setBackground(mycolor);
         if (!jueves_selec[6])
             jueves7.setBackground(Color.WHITE);
         else
-            jueves7.setBackground(Color.BLUE);
+            jueves7.setBackground(mycolor);
         if (!jueves_selec[7])
             jueves8.setBackground(Color.WHITE);
         else
-            jueves8.setBackground(Color.BLUE);
+            jueves8.setBackground(mycolor);
         if (!jueves_selec[8])
             jueves9.setBackground(Color.WHITE);
         else
-            jueves9.setBackground(Color.BLUE);
+            jueves9.setBackground(mycolor);
         if (!jueves_selec[9])
             jueves10.setBackground(Color.WHITE);
         else
-            jueves10.setBackground(Color.BLUE);
+            jueves10.setBackground(mycolor);
         if (!jueves_selec[10])
             jueves11.setBackground(Color.WHITE);
         else
-            jueves11.setBackground(Color.BLUE);
+            jueves11.setBackground(mycolor);
         if (!jueves_selec[11])
             jueves12.setBackground(Color.WHITE);
         else
-            jueves12.setBackground(Color.BLUE);
+            jueves12.setBackground(mycolor);
         if (!jueves_selec[12])
             jueves13.setBackground(Color.WHITE);
         else
-            jueves13.setBackground(Color.BLUE);
+            jueves13.setBackground(mycolor);
         if (!jueves_selec[13])
             jueves14.setBackground(Color.WHITE);
         else
-            jueves14.setBackground(Color.BLUE);
+            jueves14.setBackground(mycolor);
         if (!jueves_selec[14])
             jueves15.setBackground(Color.WHITE);
         else
-            jueves15.setBackground(Color.BLUE);
+            jueves15.setBackground(mycolor);
         if (!viernes_selec[0])
             viernes1.setBackground(Color.WHITE);
         else
-            viernes1.setBackground(Color.BLUE);
+            viernes1.setBackground(mycolor);
         if (!viernes_selec[1])
             viernes2.setBackground(Color.WHITE);
         else
-            viernes2.setBackground(Color.BLUE);
+            viernes2.setBackground(mycolor);
         if (!viernes_selec[2])
             viernes3.setBackground(Color.WHITE);
         else
-            viernes3.setBackground(Color.BLUE);
+            viernes3.setBackground(mycolor);
         if (!viernes_selec[3])
             viernes4.setBackground(Color.WHITE);
         else
-            viernes4.setBackground(Color.BLUE);
+            viernes4.setBackground(mycolor);
         if (!viernes_selec[4])
             viernes5.setBackground(Color.WHITE);
         else
-            viernes5.setBackground(Color.BLUE);
+            viernes5.setBackground(mycolor);
         if (!viernes_selec[5])
             viernes6.setBackground(Color.WHITE);
         else
-            viernes6.setBackground(Color.BLUE);
+            viernes6.setBackground(mycolor);
         if (!viernes_selec[6])
             viernes7.setBackground(Color.WHITE);
         else
-            viernes7.setBackground(Color.BLUE);
+            viernes7.setBackground(mycolor);
         if (!viernes_selec[7])
             viernes8.setBackground(Color.WHITE);
         else
-            viernes8.setBackground(Color.BLUE);
+            viernes8.setBackground(mycolor);
         if (!viernes_selec[8])
             viernes9.setBackground(Color.WHITE);
         else
-            viernes9.setBackground(Color.BLUE);
+            viernes9.setBackground(mycolor);
         if (!viernes_selec[9])
             viernes10.setBackground(Color.WHITE);
         else
-            viernes10.setBackground(Color.BLUE);
+            viernes10.setBackground(mycolor);
         if (!viernes_selec[10])
             viernes11.setBackground(Color.WHITE);
         else
-            viernes11.setBackground(Color.BLUE);
+            viernes11.setBackground(mycolor);
         if (!viernes_selec[11])
             viernes12.setBackground(Color.WHITE);
         else
-            viernes12.setBackground(Color.BLUE);
+            viernes12.setBackground(mycolor);
         if (!viernes_selec[12])
             viernes13.setBackground(Color.WHITE);
         else
-            viernes13.setBackground(Color.BLUE);
+            viernes13.setBackground(mycolor);
         if (!viernes_selec[13])
             viernes14.setBackground(Color.WHITE);
         else
-            viernes14.setBackground(Color.BLUE);
+            viernes14.setBackground(mycolor);
         if (!viernes_selec[14])
             viernes15.setBackground(Color.WHITE);
         else
-            viernes15.setBackground(Color.BLUE);
+            viernes15.setBackground(mycolor);
         if (!sabado_selec[0])
             sabado1.setBackground(Color.WHITE);
         else
-            sabado1.setBackground(Color.BLUE);
+            sabado1.setBackground(mycolor);
         if (!sabado_selec[1])
             sabado2.setBackground(Color.WHITE);
         else
-            sabado2.setBackground(Color.BLUE);
+            sabado2.setBackground(mycolor);
         if (!sabado_selec[2])
             sabado3.setBackground(Color.WHITE);
         else
-            sabado3.setBackground(Color.BLUE);
+            sabado3.setBackground(mycolor);
         if (!sabado_selec[3])
             sabado4.setBackground(Color.WHITE);
         else
-            sabado4.setBackground(Color.BLUE);
+            sabado4.setBackground(mycolor);
         if (!sabado_selec[4])
             sabado5.setBackground(Color.WHITE);
         else
-            sabado5.setBackground(Color.BLUE);
+            sabado5.setBackground(mycolor);
         if (!sabado_selec[5])
             sabado6.setBackground(Color.WHITE);
         else
-            sabado6.setBackground(Color.BLUE);
+            sabado6.setBackground(mycolor);
         if (!sabado_selec[6])
             sabado7.setBackground(Color.WHITE);
         else
-            sabado7.setBackground(Color.BLUE);
+            sabado7.setBackground(mycolor);
         if (!sabado_selec[7])
             sabado8.setBackground(Color.WHITE);
         else
-            sabado8.setBackground(Color.BLUE);
+            sabado8.setBackground(mycolor);
         if (!sabado_selec[8])
             sabado9.setBackground(Color.WHITE);
         else
-            sabado9.setBackground(Color.BLUE);
+            sabado9.setBackground(mycolor);
         if (!sabado_selec[9])
             sabado10.setBackground(Color.WHITE);
         else
-            sabado10.setBackground(Color.BLUE);
+            sabado10.setBackground(mycolor);
         if (!sabado_selec[10])
             sabado11.setBackground(Color.WHITE);
         else
-            sabado11.setBackground(Color.BLUE);
+            sabado11.setBackground(mycolor);
         if (!sabado_selec[11])
             sabado12.setBackground(Color.WHITE);
         else
-            sabado12.setBackground(Color.BLUE);
+            sabado12.setBackground(mycolor);
         if (!sabado_selec[12])
             sabado13.setBackground(Color.WHITE);
         else
-            sabado13.setBackground(Color.BLUE);
+            sabado13.setBackground(mycolor);
         if (!sabado_selec[13])
             sabado14.setBackground(Color.WHITE);
         else
-            sabado14.setBackground(Color.BLUE);
+            sabado14.setBackground(mycolor);
         if (!sabado_selec[14])
             sabado15.setBackground(Color.WHITE);
         else
-            sabado15.setBackground(Color.BLUE);
+            sabado15.setBackground(mycolor);
     }
     
     public ConfigurarHorario(int id_profesor) {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.id_profesor = id_profesor;        
+        this.id_profesor = id_profesor;     
+        jLabel24.setIcon(new ImageIcon("C:\\Users\\Juan carlos\\Documents\\NetBeansProjects\\TuProfeMaven-master\\src\\main\\java\\imagenes\\Fondo5.jpeg"));
         int lunes = 0;
         int martes = 0;
         int miercoles = 0;
@@ -553,7 +556,6 @@ public class ConfigurarHorario extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         sabado14 = new javax.swing.JButton();
         sabado15 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -632,1016 +634,765 @@ public class ConfigurarHorario extends javax.swing.JFrame {
         jueves9 = new javax.swing.JButton();
         jueves10 = new javax.swing.JButton();
         jueves11 = new javax.swing.JButton();
-        confirmar = new javax.swing.JButton();
         regresar = new javax.swing.JButton();
+        confirmar = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setPreferredSize(new java.awt.Dimension(563, 500));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jueves12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves12ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 60, 20));
 
         jueves13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves13ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 60, 20));
 
         sabado4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado4ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 60, 20));
 
         sabado5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado5ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 190, 60, 20));
 
         sabado6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado6ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 60, 20));
 
         sabado7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado7ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 60, 20));
 
         sabado8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado8ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado8, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, 60, 20));
 
         sabado9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado9ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 60, 20));
 
         sabado10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado10ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 60, 20));
 
         jueves14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves14ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 60, 20));
 
         sabado11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado11ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 310, 60, 20));
 
         jueves15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves15ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves15, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, 60, 20));
 
         sabado12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado12ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 60, 20));
 
         viernes1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes1ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 60, 21));
 
         sabado13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado13ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado13, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 350, 60, 20));
 
         viernes2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes2ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 60, 20));
 
         viernes3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes3ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 60, 20));
 
         viernes4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes4ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 60, 20));
 
         viernes5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes5ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 190, 60, 20));
 
         viernes6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes6ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 60, 20));
 
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel2.setText("Hora");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
 
         viernes7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes7ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 60, 20));
 
+        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel5.setText("6:00 a.m.");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         viernes8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes8ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 60, 20));
 
+        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel6.setText("7:00 a.m.");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel7.setText("8:00 a.m.");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel8.setText("9:00 a.m.");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel3.setText("10:00 a.m.");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel4.setText("11:00 a.m.");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
-        jLabel9.setText("12:00 m.");
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel9.setText("12:00 p.m.");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel10.setText("1:00 p.m.");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
 
+        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel11.setText("2:00 p.m.");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
 
         sabado14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado14ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado14, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 60, 20));
 
         sabado15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado15ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado15, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 390, 60, 20));
 
-        jLabel1.setText("Configura tu horario");
-
+        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel12.setText("3:00 p.m.");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
+        jLabel13.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel13.setText("4:00 p.m.");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
+        jLabel14.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel14.setText("5:00 p.m.");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
 
+        jLabel15.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel15.setText("6:00 p.m.");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
+        jLabel16.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel16.setText("7:00 p.m.");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
 
+        jLabel17.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel17.setText("8:00 p.m.");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
 
+        jLabel18.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel18.setText("Lunes");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, -1));
 
+        jLabel19.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel19.setText("Martes");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, -1, -1));
 
+        jLabel20.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel20.setText("Miércoles");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, -1, -1));
 
+        jLabel21.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel21.setText("Jueves");
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, -1, -1));
 
+        jLabel22.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel22.setText("Viernes");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, -1, -1));
 
+        jLabel23.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel23.setText("Sábado");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, -1, -1));
 
         lunes1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes1ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 60, 20));
 
         lunes2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes2ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 60, 20));
 
         lunes3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes3ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 60, 20));
 
         lunes4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes4ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 60, 20));
 
         lunes5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes5ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 60, 20));
 
         lunes6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes6ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 60, 20));
 
         lunes7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes7ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 60, 20));
 
         lunes8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes8ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 60, 20));
 
         lunes9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes9ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes9, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 60, 20));
 
         lunes10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes10ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 60, 20));
 
         lunes11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes11ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes11, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 60, 20));
 
         lunes12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes12ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 60, 20));
 
         lunes13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes13ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 60, 20));
 
         lunes14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes14ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 60, 20));
 
         lunes15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lunes15ActionPerformed(evt);
             }
         });
+        jPanel1.add(lunes15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 60, 20));
 
         martes1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes1ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 60, 20));
 
         martes2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes2ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 60, 20));
 
         martes3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes3ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 60, 20));
 
         martes4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes4ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 60, 20));
 
         martes5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes5ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 60, 20));
 
         martes6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes6ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 60, 20));
 
         martes7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes7ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 60, 20));
 
         martes8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes8ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 60, 20));
 
         martes9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes9ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 60, 20));
 
         martes10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes10ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 60, 20));
 
         martes11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes11ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 60, 20));
 
         martes12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes12ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, 60, 20));
 
         martes13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes13ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes13, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, 60, 20));
 
         martes14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes14ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 60, 20));
 
         martes15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 martes15ActionPerformed(evt);
             }
         });
+        jPanel1.add(martes15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 60, 20));
 
         miercoles1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles1ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 60, 20));
 
         miercoles2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles2ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 60, 20));
 
         miercoles3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles3ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 60, 20));
 
         miercoles4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles4ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 60, 20));
 
         miercoles5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles5ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 60, 20));
 
         miercoles6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles6ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 60, 20));
 
         miercoles7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles7ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 60, 20));
 
         miercoles8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles8ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 60, 20));
 
         miercoles9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles9ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 60, 20));
 
         miercoles10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles10ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 60, 20));
 
         miercoles11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles11ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles11, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 60, 20));
 
         miercoles12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles12ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 60, 20));
 
         miercoles13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles13ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles13, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 60, 20));
 
         miercoles14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles14ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, 60, 20));
 
         miercoles15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miercoles15ActionPerformed(evt);
             }
         });
+        jPanel1.add(miercoles15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 390, 60, 20));
 
         jueves1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 60, 20));
 
         jueves2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves2ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, 60, 20));
 
         jueves3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves3ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 60, 20));
 
         viernes9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes9ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 60, 20));
 
         viernes10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes10ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes10, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 60, 20));
 
         viernes11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes11ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 60, 20));
 
         viernes12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes12ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 60, 20));
 
         viernes13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes13ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 60, 20));
 
         viernes14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes14ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes14, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 60, 20));
 
         viernes15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viernes15ActionPerformed(evt);
             }
         });
+        jPanel1.add(viernes15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 60, 20));
 
         jueves4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves4ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 60, 20));
 
         sabado1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado1ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 110, 60, 21));
 
         jueves5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves5ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, 60, 20));
 
         sabado2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado2ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 60, 20));
 
         jueves6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves6ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 60, 20));
 
         sabado3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sabado3ActionPerformed(evt);
             }
         });
+        jPanel1.add(sabado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 60, 20));
 
         jueves7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves7ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 60, 20));
 
         jueves8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves8ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 60, 20));
 
         jueves9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves9ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 60, 20));
 
         jueves10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves10ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 60, 20));
 
         jueves11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jueves11ActionPerformed(evt);
             }
         });
+        jPanel1.add(jueves11, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 60, 20));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel17))
-                        .addGap(38, 38, 38)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lunes15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunes14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel18)
-                            .addComponent(lunes1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19)
-                            .addComponent(martes15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes13, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(martes14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(23, 23, 23)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(miercoles15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles13, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(miercoles14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel20))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jueves15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves13, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jueves14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel21))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(viernes15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(viernes1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel22))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel23)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(sabado15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(sabado1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel18)
-                                .addComponent(jLabel19)
-                                .addComponent(jLabel20)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel5)
-                                            .addComponent(lunes1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(6, 6, 6)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel6)
-                                            .addComponent(lunes2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel7)
-                                            .addComponent(lunes3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel8)
-                                            .addComponent(lunes4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel3)
-                                            .addComponent(lunes5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel4)
-                                            .addComponent(lunes6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel9)
-                                            .addComponent(lunes7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel10)
-                                            .addComponent(lunes8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel11)
-                                            .addComponent(lunes9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel12)
-                                            .addComponent(lunes10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel13)
-                                            .addComponent(lunes11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel14)
-                                            .addComponent(lunes12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel15)
-                                            .addComponent(lunes13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel16)
-                                            .addComponent(lunes14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel17)
-                                            .addComponent(lunes15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(martes1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(martes15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(sabado1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(sabado2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(sabado15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(viernes1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(viernes2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(viernes15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(miercoles1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(miercoles2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(miercoles15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jueves1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jueves15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap())
-        );
-
-        confirmar.setText("Confirmar");
-        confirmar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                confirmarActionPerformed(evt);
-            }
-        });
-
+        regresar.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         regresar.setText("Regresar");
         regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 regresarActionPerformed(evt);
             }
         });
+        jPanel1.add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, -1, -1));
+
+        confirmar.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        confirmar.setText("Confirmar");
+        confirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(confirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, -1));
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 560, 480));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(46, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(regresar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(confirmar)
-                        .addGap(17, 17, 17))))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 557, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(confirmar)
-                    .addComponent(regresar))
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, Short.MAX_VALUE))
         );
 
         pack();
@@ -2244,7 +1995,6 @@ public class ConfigurarHorario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton confirmar;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -2260,6 +2010,7 @@ public class ConfigurarHorario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

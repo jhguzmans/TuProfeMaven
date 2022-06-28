@@ -6,6 +6,7 @@ package com.mycompany.tuprofemaven;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -76,7 +77,33 @@ public class AgregarMaterias extends javax.swing.JFrame {
     
     public AgregarMaterias(int id_profesor) {
         initComponents();
+        jLabel1.setIcon(new ImageIcon("C:\\Users\\Juan carlos\\Documents\\NetBeansProjects\\TuProfeMaven-master\\src\\main\\java\\imagenes\\Fondo2.jpeg"));
         this.setLocationRelativeTo(null);
+        diferencial.setOpaque(false);
+        integral.setOpaque(false);
+        algebra.setOpaque(false);
+        ecuaciones.setOpaque(false);
+        multivariado.setOpaque(false);
+        probabilidad.setOpaque(false);
+        programacion.setOpaque(false);
+        poo.setOpaque(false);
+        estructuras.setOpaque(false);
+        bases.setOpaque(false);
+        algoritmos.setOpaque(false);
+        ingles.setOpaque(false);
+        frances.setOpaque(false);
+        portugues.setOpaque(false);
+        aleman.setOpaque(false);
+        mecanica.setOpaque(false);
+        electromagnetismo.setOpaque(false);
+        ondas.setOpaque(false);
+        termodinamica.setOpaque(false);
+        electrodinamica.setOpaque(false);
+        analisis.setOpaque(false);
+        inorganica.setOpaque(false);
+        organica.setOpaque(false);
+        calor.setOpaque(false);
+        masa.setOpaque(false);
         this.id_profesor = id_profesor;
         ResultSet rs = ProfesoresDB.getProfesor(id_profesor);
         int materias = 0;
@@ -157,7 +184,6 @@ public class AgregarMaterias extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         diferencial = new javax.swing.JRadioButton();
         integral = new javax.swing.JRadioButton();
@@ -190,223 +216,165 @@ public class AgregarMaterias extends javax.swing.JFrame {
         frances = new javax.swing.JRadioButton();
         portugues = new javax.swing.JRadioButton();
         aleman = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Seleccione las materias que desea agregar");
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel2.setText("Matemáticas");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, 20));
 
+        diferencial.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         diferencial.setText("Calculo Diferecial");
+        diferencial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                diferencialActionPerformed(evt);
+            }
+        });
+        jPanel1.add(diferencial, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, 20));
 
+        integral.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         integral.setText("Calculo Integral");
+        jPanel1.add(integral, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, 20));
 
+        algebra.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         algebra.setText("Algebra Lineal");
+        jPanel1.add(algebra, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, 20));
 
+        multivariado.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         multivariado.setText("Calculo Multivariado");
+        jPanel1.add(multivariado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, 20));
 
+        ecuaciones.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         ecuaciones.setText("Ecuaciones Diferenciales");
+        jPanel1.add(ecuaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, -1, 20));
 
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel3.setText("Programación");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, -1, -1));
 
+        programacion.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         programacion.setText("Programacion");
+        programacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                programacionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(programacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, -1, -1));
 
+        poo.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         poo.setText("Programacion Orientada a Objetos");
+        jPanel1.add(poo, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, -1, -1));
 
+        estructuras.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         estructuras.setText("Estructuras de Datos");
+        jPanel1.add(estructuras, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, -1, -1));
 
+        bases.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         bases.setText("Bases de Datos");
+        jPanel1.add(bases, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, -1, -1));
 
+        probabilidad.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         probabilidad.setText("Probabilidad y Estadisitca");
+        jPanel1.add(probabilidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, 20));
 
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel4.setText("Química");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 350, -1, -1));
 
+        analisis.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         analisis.setText("Principios de Analisis Quimico");
+        jPanel1.add(analisis, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 370, -1, -1));
 
+        inorganica.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         inorganica.setText("Quimica Inorganica");
+        jPanel1.add(inorganica, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, -1, -1));
 
+        organica.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         organica.setText("Quimica Organica");
+        jPanel1.add(organica, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 410, -1, -1));
 
+        calor.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         calor.setText("Transferencia de Calor");
+        jPanel1.add(calor, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, -1, -1));
 
+        masa.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         masa.setText("Transferencia de Masa");
+        jPanel1.add(masa, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 450, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel5.setText("Física");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, -1, -1));
 
+        mecanica.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         mecanica.setText("Mecanica Newtoniana");
+        jPanel1.add(mecanica, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
 
+        electromagnetismo.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         electromagnetismo.setText("Electricidad y Magnetismo");
+        jPanel1.add(electromagnetismo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, -1, -1));
 
+        ondas.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         ondas.setText("Oscilaciones y Ondas");
+        jPanel1.add(ondas, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, -1, -1));
 
+        termodinamica.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         termodinamica.setText("Termodinamica");
+        jPanel1.add(termodinamica, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
 
+        electrodinamica.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         electrodinamica.setText("Electrodinamica");
+        jPanel1.add(electrodinamica, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, -1, -1));
 
+        algoritmos.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         algoritmos.setText("Algoritmos");
+        jPanel1.add(algoritmos, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, -1, -1));
 
+        confirmar.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         confirmar.setText("Confirmar");
         confirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 confirmarActionPerformed(evt);
             }
         });
+        jPanel1.add(confirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 410, -1, -1));
 
+        regresar.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         regresar.setText("Regresar");
         regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 regresarActionPerformed(evt);
             }
         });
+        jPanel1.add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 450, 120, -1));
 
+        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel6.setText("Idiomas");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 180, -1, -1));
 
+        ingles.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         ingles.setText("Ingles");
+        jPanel1.add(ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 200, -1, -1));
 
+        frances.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         frances.setText("Frances");
+        jPanel1.add(frances, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 220, -1, -1));
 
+        portugues.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         portugues.setText("Portugues");
+        portugues.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                portuguesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(portugues, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 240, -1, -1));
 
+        aleman.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         aleman.setText("Aleman");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(integral)
-                                    .addComponent(diferencial)
-                                    .addComponent(algebra)
-                                    .addComponent(multivariado)
-                                    .addComponent(ecuaciones)
-                                    .addComponent(probabilidad))))
-                        .addGap(50, 50, 50)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(poo)
-                                    .addComponent(programacion)
-                                    .addComponent(estructuras)
-                                    .addComponent(bases)
-                                    .addComponent(algoritmos))))
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(inorganica)
-                                    .addComponent(analisis)
-                                    .addComponent(organica)
-                                    .addComponent(calor)
-                                    .addComponent(masa)))))
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel5)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(termodinamica)
-                            .addComponent(electrodinamica)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(electromagnetismo)
-                                    .addComponent(ondas)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(mecanica)
-                                        .addGap(71, 71, 71)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel6)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(6, 6, 6)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(frances)
-                                                    .addComponent(ingles)
-                                                    .addComponent(portugues)
-                                                    .addComponent(aleman))))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(regresar)
-                                    .addComponent(confirmar))
-                                .addGap(107, 107, 107)))))
-                .addContainerGap(50, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(diferencial)
-                    .addComponent(programacion)
-                    .addComponent(analisis))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(integral)
-                    .addComponent(poo)
-                    .addComponent(inorganica))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(algebra)
-                    .addComponent(estructuras)
-                    .addComponent(organica))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(multivariado)
-                    .addComponent(bases)
-                    .addComponent(calor))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ecuaciones)
-                    .addComponent(masa)
-                    .addComponent(algoritmos))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(probabilidad)
-                .addGap(41, 41, 41)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(mecanica)
-                                    .addComponent(ingles)))
-                            .addComponent(confirmar))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(electromagnetismo)
-                            .addComponent(frances))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ondas)
-                            .addComponent(portugues)))
-                    .addComponent(regresar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(termodinamica)
-                    .addComponent(aleman))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(electrodinamica)
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
+        jPanel1.add(aleman, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 260, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 530));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -418,7 +386,7 @@ public class AgregarMaterias extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -473,6 +441,18 @@ public class AgregarMaterias extends javax.swing.JFrame {
             System.exit(0);
         }
     }//GEN-LAST:event_confirmarActionPerformed
+
+    private void portuguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_portuguesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portuguesActionPerformed
+
+    private void diferencialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diferencialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_diferencialActionPerformed
+
+    private void programacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_programacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_programacionActionPerformed
 
     /**
      * @param args the command line arguments
